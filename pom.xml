@@ -30,6 +30,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!-- Gives ssh remote monitoring console -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-shell-remote</artifactId>
+        </dependency>
         <!-- Adds YAML support -->
         <dependency>
             <groupId>org.yaml</groupId>

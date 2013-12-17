@@ -1,2 +1,6 @@
 settings:
   greeting: Hello
+
+shell.auth.simple.user:
+  name: admin
+  password: admin
