@@ -8,6 +8,10 @@
     <artifactId>spring-jug</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <java.version>1.7</java.version>
+    </properties>
+
     <!-- Gives predefined dependencyManagement -->
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -16,14 +20,21 @@
     </parent>
 
     <dependencies>
-        <!-- Give auto configuration of a web application -->
+        <!-- Gives auto configuration of a web application -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Adds YAML support -->
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
+        </dependency>
+        <!-- Enable Spring test support -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
